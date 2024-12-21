@@ -68,6 +68,7 @@
         }
         .intro-section .content {
             max-width: 600px;
+            text-align: center;
         }
         .intro-section .cta-button {
             display: inline-block;
@@ -116,8 +117,8 @@
         }
         .about {
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: space-around;
             padding: 50px 20px;
         }
         .about img {
@@ -126,10 +127,11 @@
         }
         .about div {
             max-width: 600px;
-            text-align: left;
+            text-align: center;
         }
         .about h2 {
             font-size: 2rem;
+            text-align: center;
         }
         .testimonials {
             background-color: #f4f4f4;
@@ -142,45 +144,20 @@
         .faq {
             padding: 50px 20px;
         }
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        #mc_embed_shell {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 400px;
+            padding: 50px;
         }
-        .contact-form h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .contact-form label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: 500;
-            text-align: center;
-        }
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            text-align: center;
-        }
-        .contact-form button {
-            width: 100%;
-            padding: 10px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 1rem;
-            font-weight: 500;
-            cursor: pointer;
-        }
-        .contact-form button:hover {
-            background-color: #0056b3;
+        #mc_embed_signup {
+            background: #fff;
+            clear: left;
+            font: 14px Helvetica, Arial, sans-serif;
+            width: 1200px; /* Adjust width for larger size */
+            transform: scale(1.5); /* Scale the entire form */
+            transform-origin: center; /* Ensure scaling is centered */
         }
         footer {
             background-color: #002B5B;
@@ -261,20 +238,50 @@
         <p><strong>Do I need prior experience in real estate?</strong><br>No, the program is designed for both beginners and experienced investors.</p>
         <p><strong>How long does the program take?</strong><br>It’s self-paced, so you can learn on your own schedule.</p>
     </section>
-    <section id="contact">
-        <div class="contact-form">
-            <h2>Contact Us</h2>
-            <form action="form-handler.php" method="post">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-                <label for="phone">Phone Number (Optional):</label>
-                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
-                <button type="submit">Submit</button>
+
+
+<section id="contact">
+    <div id="mc_embed_shell" style="display: flex; justify-content: center; align-items: center; padding: 50px; background-color: #f9f9f9;">
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+        <div id="mc_embed_signup" style="background: #fff; clear: left; font: 14px Helvetica, Arial, sans-serif; width: 100%; max-width: 600px; padding: 20px; border: 1px solid #ccc; border-radius: 10px;">
+            <form action="https://us19.list-manage.com/subscribe/post?u=da452802a9fd05dd36be811f9&amp;id=f92288562c" 
+                  method="post" 
+                  id="mc-embedded-subscribe-form" 
+                  name="mc-embedded-subscribe-form" 
+                  class="validate" 
+                  target="_blank">
+                <div id="mc_embed_signup_scroll">
+                    <h2 style="text-align: center;">Subscribe</h2>
+                    <div class="indicates-required" style="text-align: center;"><span class="asterisk">*</span> indicates required</div>
+                    <div class="mc-field-group">
+                        <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+                        <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" style="width: 100%; padding: 10px; margin-bottom: 10px;">
+                    </div>
+                    <div class="mc-field-group">
+                        <label for="mce-FNAME">First Name</label>
+                        <input type="text" name="FNAME" class="text" id="mce-FNAME" style="width: 100%; padding: 10px; margin-bottom: 10px;">
+                    </div>
+                    <div class="mc-field-group">
+                        <label for="mce-LNAME">Last Name</label>
+                        <input type="text" name="LNAME" class="text" id="mce-LNAME" style="width: 100%; padding: 10px; margin-bottom: 10px;">
+                    </div>
+                    <div id="mce-responses" class="clear" style="display: none;">
+                        <div class="response" id="mce-error-response"></div>
+                        <div class="response" id="mce-success-response"></div>
+                    </div>
+                    <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                        <input type="text" name="b_da452802a9fd05dd36be811f9_f92288562c" tabindex="-1" value="">
+                    </div>
+                    <div class="clear" style="text-align: center;">
+                        <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe" style="background-color: #007BFF; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+                    </div>
+                </div>
             </form>
         </div>
-    </section>
+    </div>
+</section>
+
+
     <footer>
         <p>&copy; 2024 Coast 2 Coast CRE Academy. All Rights Reserved.</p>
         <nav>
